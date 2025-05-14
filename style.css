@@ -111,6 +111,13 @@ p a {
 	flex-shrink: 0;
 }
 
+a {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 90%; /* or whatever limit makes sense */
+}
+
 p a + text,
 p a + * {
 	max-width: 50%;
