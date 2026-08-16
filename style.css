@@ -213,4 +213,20 @@ a:hover {
 	h1 {
 		font-size: 2.25rem;
 	}
+
+	/* Stack every entry (title above, publication below) instead of
+	   trying to fit both on one line — matches what already happened
+	   automatically for long titles, now applied to all entries. */
+	p {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.1rem;
+	}
+
+	p a {
+		white-space: normal;
+		overflow: visible;
+		text-overflow: unset;
+		max-width: 100%;
+	}
 }
